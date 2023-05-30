@@ -1,0 +1,52 @@
+<style>
+
+
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
+    #intro {
+        padding-top: 15%;
+        flex-shrink: 0;
+        height: 85vh;
+        background-image: url("../Deer-on-a-mountain-with-sunset-landscape-Graphics-22921858-1.jpg");
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    .navbar {
+        background-color: #F67280;
+    }
+
+    .navbar-brand {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    #navbar_main {
+        background-color: #C06C84;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        margin-right: 10px;
+        color: white;
+        font-weight: bold;
+        font-family: April;
+
+    }
+
+    #intro-container{
+        text-align: center;
+        width: 100%;
+        align-items: center;
+    }
+
+
+
+</style>

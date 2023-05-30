@@ -11,26 +11,7 @@
     <title>Varsity Web & Media</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <style>
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            margin: 0px;
-            padding: 0px;
-            overflow-x: hidden;
-        }
-
-        #intro {
-            padding-top: 15%;
-            flex-shrink: 0;
-            height: 85vh;
-            background-image: url('../static/Deer-on-a-mountain-with-sunset-landscape-Graphics-22921858-1.jpg');
-            background-position: center;
-            background-size: cover;
-
-        }
-    </style>
+    <link href="../static/css/main.css" rel="stylesheet" type="text/css">
 </head>
 {% endblock %}
 
@@ -41,11 +22,10 @@
     {% endblock %}
 
     {% block navigation %}
-    <nav class="navbar" style="background-color: #F67280;">
+    <nav class="navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'Home:home' %}">
-                <span class="navbar-brand mb-0 h1"
-                    style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 25px; font-weight: bold;">Varsity
+                <span class="navbar-brand mb-0 h1">Varsity
                     Web &
                     Media</span>
             </a>
@@ -70,7 +50,7 @@
     </nav>
 
 
-    <nav class="navbar navbar-expand-lg p-2" style="background-color: #C06C84;">
+    <nav class="navbar navbar-expand-lg p-2" id="navbar_main">
         <div class="container-fluid">
             <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Varsity.png?20100612013938" width="50"
                 height="50">
@@ -84,31 +64,26 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto p-2">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#"
-                            style="font-size: 20px; margin-right: 10px; color: white; font-weight: bold; font-family: April;">About
+                        <a class="nav-link" aria-current="page" href="#">About
                             Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'Home:our_work' %}"
-                            style="font-size: 20px; margin-right: 10px; color: white; font-weight: bold; font-family: April;">Our
+                        <a class="nav-link" href="{% url 'Home:our_work' %}">Our
                             Work</a>
                     </li>
                     <li class=" nav-item">
-                        <a class="nav-link" href="#"
-                            style="font-size: 20px; margin-right: 10px; color: white; font-weight: bold; font-family: April;">Our
+                        <a class="nav-link" href="#">Our
                             Process</a>
                     </li>
                     <li class=" nav-item">
-                        <a class="nav-link" href="#"
-                            style="font-size: 20px; color: white; font-weight: bold; font-family: April;">Testimonials</a>
+                        <a class="nav-link" href="#">Testimonials</a>
                     </li>
 
 
                 </ul>
 
                 <div class="ml-auto">
-                    <button type="button" class="btn btn-light"
-                        style=" width: 100%; height: 50px; color: black; font-weight: bold; font-family: April;">Contact
+                    <button type="button" class="btn btn-light">Contact
                         Us</button>
                 </div>
             </div>
@@ -129,7 +104,7 @@
 
         <!-- section that serves for an introduction. -->
         <!-- Content here -->
-        <div class="container-fluid" style="text-align: center; width: 100%; align-items: center;">
+        <div id="intro-container" class="container-fluid">
 
             <h1 class="display-2" style="font-family: April; font-weight: bold; font-family: April; color: white;">
                 Create & Grow Your
