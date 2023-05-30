@@ -21,12 +21,14 @@
             overflow-x: hidden;
         }
 
-        #intro img {
+        #intro {
+            padding-top: 15%;
             flex-shrink: 0;
             min-width: 100%;
             min-height: 100%;
             background-position: center;
             background-size: cover;
+            background-image: url('../static/Deer-on-a-mountain-with-sunset-landscape-Graphics-22921858-1.jpg');
 
         }
     </style>
@@ -123,13 +125,12 @@
     {% block mainbody %}
 
     <section id="intro" style="width: 100%;
-          display: flex;
           margin: 0;
           max-width: none;
           height: 100vh;
-          justify-content: center;">
+          justify-content: center;
+          align-items: center;">
 
-        <img src="../static/Deer-on-a-mountain-with-sunset-landscape-Graphics-22921858-1.jpg" style="position: center;">
 
 
         <!-- section that serves for an introduction. -->
