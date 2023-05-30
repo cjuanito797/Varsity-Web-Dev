@@ -20,6 +20,15 @@
             padding: 0px;
             overflow-x: hidden;
         }
+
+        #intro img {
+            flex-shrink: 0;
+            min-width: 100%;
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+
+        }
     </style>
 </head>
 {% endblock %}
@@ -113,7 +122,14 @@
 
     {% block mainbody %}
 
-    <section id="intro" style="width: 100%; padding-top: 15%; padding-bottom: 75%; background-color: red;">
+    <section id="intro" style="width: 100%;
+          display: flex;
+          margin: 0;
+          max-width: none;
+          height: 100vh;
+          justify-content: center;">
+
+        <img src="../static/Deer-on-a-mountain-with-sunset-landscape-Graphics-22921858-1.jpg" style="position: center;">
 
 
         <!-- section that serves for an introduction. -->
