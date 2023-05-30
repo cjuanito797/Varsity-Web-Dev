@@ -1,7 +1,5 @@
 <style>
 
-
-
     html, body {
         width: 100%;
         height: 100%;
@@ -11,7 +9,7 @@
     }
 
     #intro {
-        padding-top: 15%;
+        padding-top: 10%;
         flex-shrink: 0;
         height: 85vh;
         background-image: url("../Deer-on-a-mountain-with-sunset-landscape-Graphics-22921858-1.jpg");
@@ -45,6 +43,38 @@
         text-align: center;
         width: 100%;
         align-items: center;
+    }
+
+    #main_header {
+        font-family: April;
+        font-weight: bold;
+        color: white;
+    }
+
+    #main_button {
+        width: 350px;
+        height: 75px;
+        font-weight: bold;
+        font-size: 25px;
+        font-family: April;
+    }
+
+    .facet {
+        background-color: #6C5B7B;
+        border-right: 3px solid white;
+        border-bottom: 5px solid white;
+
+    }
+
+    .facet-header {
+        background-color: #6C5B7B;
+        width: 100%;
+    }
+
+    .header {
+        color: white;
+        font-weight: bold;
+        font-family: April;
     }
 
 

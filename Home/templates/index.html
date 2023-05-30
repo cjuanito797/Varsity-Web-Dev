@@ -106,13 +106,12 @@
         <!-- Content here -->
         <div id="intro-container" class="container-fluid">
 
-            <h1 class="display-2" style="font-family: April; font-weight: bold; font-family: April; color: white;">
+            <h1 id="main_header" class="display-2">
                 Create & Grow Your
                 Website Today With
                 Varsity Web & Media!</h1>
 
-            <button type="button" class="btn btn-light"
-                style="width: 350px; height: 75px; font-weight: bold; font-size: 25px; font-family: April;">Start
+            <button type="button" class="btn btn-light" id="main_button">Start
                 Today</button>
 
         </div>
@@ -123,10 +122,9 @@
 
     <section id="captions">
         <div class="row justify-content-between">
-            <div class="col-sm text-center"
-                style="background-color: #6C5B7B; border-right: 3px solid white; border-bottom: 5px solid white;">
-                <div class="container-fluid  p-3" style="background-color: #6C5B7B; width: 100%;">
-                    <h2 style="color: white; font-weight: bold; font-family: April;">Intuition</h2>
+            <div class="col-sm text-center facet">
+                <div class="container-fluid  p-3 facet-header">
+                    <h2 class="header">Intuition</h2>
                 </div>
                 <img src="https://cdn-icons-png.flaticon.com/512/150/150622.png" width="100" height="100" class="p-2">
                 <p class="lead p-5 text-white" style="font-weight: bold;">Through each project that we have built we
@@ -137,10 +135,9 @@
                     the web application of your dreams.</p>
             </div>
 
-            <div class="col-sm text-center"
-                style="background-color: #6C5B7B; border-right: 3px solid white; border-bottom: 5px solid white;">
-                <div class="container-fluid p-3" style="background-color: #6C5B7B; width: 100%;">
-                    <h2 style="color: white; font-weight: bold; font-family: April;">Inspiration</h2>
+            <div class="col-sm text-center facet">
+                <div class="container-fluid p-3 facet-header">
+                    <h2 class="header">Inspiration</h2>
                 </div>
                 <img src="https://cdn3.iconfinder.com/data/icons/nature-emoji/50/Fire-512.png" width="100" height="100"
                     class="p-2">
@@ -152,9 +149,9 @@
 
             </div>
 
-            <div class="col-sm text-center" style="background-color: #6C5B7B; border-bottom: 5px solid white;">
-                <div class="container-fluid  p-3" style="background-color: #6C5B7B; width: 100%;">
-                    <h2 style="color: white; font-weight: bold; font-family: April;">Innovation</h2>
+            <div class="col-sm text-center facet">
+                <div class="container-fluid  p-3 facet-header">
+                    <h2 class="header">Innovation</h2>
                 </div>
                 <img src="https://fwdigital.net/wp-content/uploads/2021/08/Lightbulb_1-538x641.png" width="100"
                     height="100" class="p-2">
@@ -186,47 +183,47 @@
             <div class="col-sm">
 
                 <!-- row for Django, Vue.js and Python. -->
-                <div class="row justify-content-between text-center" style="align-items: center; position: relative;">
-                    <div class="col-sm p-3" style="height: 20vh;">
-                        <img src="../static/django.jpeg" style="height: 100%; width: auto; position: relative;">
+                <div class="row justify-content-between text-center">
+                    <div class="col-sm p-3" style="height: 25vh;">
+                        <img src="../static/django.jpeg" style="height: 100%; width: auto;">
                     </div>
 
-                    <div class="col-sm p-5" style="height: 20vh;">
+                    <div class="col-sm p-5" style="height: 25vh;">
                         <img src="../static/vue.js.png" style="height: 100%; width: auto;">
                     </div>
 
-                    <div class="col-sm p-5" style="height: 20vh">
+                    <div class="col-sm p-5" style="height: 25vh">
                         <img src="../static/python.png" style="height: 100%; width: auto;">
                     </div>
 
                 </div>
 
                 <!-- row for HTML5, CSS3 and JavaScript  -->
-                <div class="row justify-content-between text-center" style="align-items: center; position: relative;">
-                    <div class="col-sm p-3" style="height: 20vh;">
+                <div class="row justify-content-between text-center">
+                    <div class="col-sm p-3" style="height: 25vh;">
                         <img src="../static/html5.png" style="height: 90%; width: auto; position: relative;">
                     </div>
 
-                    <div class="col-sm p-3" style="height: 20vh;">
+                    <div class="col-sm p-3" style="height: 25vh;">
                         <img src="../static/css3.png" style="height: 100%; width: auto;">
                     </div>
 
-                    <div class="col-sm p-5" style="height: 20vh">
+                    <div class="col-sm p-5" style="height: 25vh">
                         <img src="../static/javascript.png" style="height: 100%; width: auto;">
                     </div>
 
                 </div>
 
-                <div class="row justify-content-between text-center" style="align-items: center; position: relative;">
-                    <div class="col-sm p-5" style="height: 20vh;">
+                <div class="row justify-content-between text-center">
+                    <div class="col-sm p-5" style="height: 25vh;">
                         <img src="../static/google_cloud.png" style="height: 100%; width: auto; position: relative;">
                     </div>
 
-                    <div class="col-sm p-5" style="height: 20vh;">
+                    <div class="col-sm p-5" style="height: 25vh;">
                         <img src="../static/mysql.png" style="height: 100%; width: auto;">
                     </div>
 
-                    <div class="col-sm p-5" style="height: 20vh">
+                    <div class="col-sm p-5" style="height: 25vh">
                     </div>
 
                 </div>
@@ -240,7 +237,7 @@
 
     <section id="about_us">
         <div class="row justify-content-between" style="background-color: #355C7D;">
-            <div class="col-sm text-center p-3">
+            <div class="col-sm text-center p-3" style="align-items: center; justify-content: center;">
                 <h1 class="heading" style="color: white; font-family: April; font-weight: bold;">Our Story</h1>
                 <p class="lead p-5 text-white m-3" style="font-weight: bold;">Hello my name is Juan
                     Lizarraga-Cortez, I
@@ -262,7 +259,7 @@
                 <img src="../static/signature.png">
             </div>
 
-            <div class="col-sm">
+            <div class="col-sm-5">
 
 
             </div>
