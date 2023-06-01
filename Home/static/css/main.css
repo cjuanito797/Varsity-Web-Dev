@@ -10,12 +10,13 @@
 
     .gallery {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(35vw, 1fr));
         grid-gap: 30px;
     }
 
     .gallery img {
-        width: 100%;
+        border-radius: 5px;
+        width: 85%;
         height: 75%;
     }
 
