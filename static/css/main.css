@@ -1,20 +1,46 @@
-<style>
+    .image_container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
 
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(35vw, 1fr));
+        grid-gap: 15px;
+    }
 
+    .gallery img {
+        border-radius: 5px;
+        width: 95%;
+        height: 85%;
+    }
 
-    html, body {
+    html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+
+    }
+
+    body {
         width: 100%;
         height: 100%;
         margin: 0px;
-        padding: 0px;
         overflow-x: hidden;
     }
 
+
     #intro {
-        padding-top: 15%;
+        padding-top: 10%;
         flex-shrink: 0;
         height: 85vh;
-        background-image: url("../css3.png")
+        background-image: url("../Deer-on-a-mountain-with-sunset-landscape-Graphics-22921858-1.jpg");
         background-position: center;
         background-size: cover;
 
@@ -26,12 +52,71 @@
 
     .navbar-brand {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bolder;
+        font-size: 25px;
     }
 
     #navbar_main {
         background-color: #C06C84;
     }
 
+    .nav-link {
+        font-size: 20px;
+        margin-right: 10px;
+        color: white;
+        font-weight: bold;
+        font-family: April;
+
+    }
+
+    #intro-container{
+        text-align: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    #main_header {
+        font-family: April;
+        font-weight: bold;
+        color: white;
+    }
+
+    #main_button {
+        width: 350px;
+        height: 75px;
+        font-weight: bold;
+        font-size: 25px;
+        font-family: April;
+    }
+
+    .facet {
+        background-color: #6C5B7B;
+        border-right: 3px solid white;
+        border-bottom: 5px solid white;
+
+    }
+
+    .facet-header {
+        background-color: #6C5B7B;
+        width: 100%;
+    }
+
+    .header {
+        color: white;
+        font-weight: bold;
+        font-family: April;
+    }
+
+    #contact_form {
+        background-color: #C06C84;
 
 
-</style>
+    }
+
+    #form_submit {
+        width: 50%;
+        margin-left: 25%;
+        font-weight: bold;
+    }
+
+    /* Just adding a comment */
