@@ -25,7 +25,7 @@
         </div>
 
         <div class="col-sm">
-            <div class="section-header text-center">
+            <div class="section-header text-center pb-5">
                 <h1 style="color: white;">{{project.name}}</h1>
             </div>
             <!-- insert the thumbnail -->
@@ -50,6 +50,23 @@
                 </ul>
             </section>
 
+            <section class="my_contributions p-3 m-5">
+                <h1 style="color: white;">My Contributions</h1>
+                <p class="lead" style="color: white;">{{project.my_contributions}}</p>
+            </section>
+
+            <section class="image_container">
+                <div class="gallery">
+                    {% for image in images %}
+                    <a href="/media/{{image}}" data-lightbox="models" data-title="{{image.caption}}">
+                        <img src="/media/{{image}}">
+                    </a>
+
+                    {% endfor %}
+                </div>
+
+
+            </section>
 
         </div>
 
@@ -57,15 +74,7 @@
         </div>
 
     </div>
-
-    <div class="row justify-content-between" style="overflow-y: scroll; overflow-x: hidden;">
-
-        <!-- image slideshow -->
-
-
-
-    </div>
-
+    <script src="../static/lightbox-plus-jquery.js"></script>
 
 
     {% endblock %}
