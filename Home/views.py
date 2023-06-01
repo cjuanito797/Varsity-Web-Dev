@@ -4,9 +4,9 @@ from .models import *
 
 def our_work(request):
     # get a collection of all, projects.
-    projects = Project.objects.all()
+    #projects = Project.objects.all()
 
-    return render(request, "our_work.html", {'projects': projects})
+    return render(request, "our_work.html",)
 
 def project_details(request, pk):
     # get the project, based off of the pk that we passed in.

@@ -33,6 +33,8 @@
         height: 100%;
         margin: 0px;
         overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
     }
 
 
@@ -120,3 +122,8 @@
     }
 
     /* Just adding a comment */
+
+
+    .footer {
+        margin-top: auto;
+    }
