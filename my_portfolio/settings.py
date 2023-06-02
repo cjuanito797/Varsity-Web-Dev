@@ -22,14 +22,12 @@ MEDIA_URL = '/media/'
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-try:
-    SECRET_KEY = os.environ["SECRET_KEY"]
-except KeyError as e:
-    raise RuntimeError("Could not find a SECRET_KEY in environment") from e
+SECRET_KEY = "django-insecure-q*5c_8-z=!#kr&r4wjpskk3s$fbg1q_+%-9l$gccj8me@)!9gt"
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['3.131.24.181', "www.varsitywebandmedia.com", "varsitywebandmedia.com", "127.0.0.1"]
+ALLOWED_HOSTS = ['3.131.24.181', "www.varsitywebandmedia.com", "varsitywebandmedia.com"]
 
 
 
