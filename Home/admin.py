@@ -5,7 +5,7 @@ from .models import *
 
 class projectImageInline(admin.StackedInline):
     model = ProjectGallery
-    extra = 0
+    extra = 1
 
 @admin.register(ProjectGallery)
 class ProjectGallery(admin.ModelAdmin):
