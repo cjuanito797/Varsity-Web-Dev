@@ -27,10 +27,15 @@
         <div class="col-sm">
             <div class="section-header text-center pb-5">
                 <h1 style="color: white;">{{project.name}}</h1>
+
             </div>
             <!-- insert the thumbnail -->
-            <div class="container" style="width: 100%;">
+            <div class="container text-center" style="width: 100%;">
                 <img src="../../media/{{project.thumbnail}}" style=" width: 100%;">
+                {% if link %}
+                <a class="btn btn-light p-3 mt-2 fw-bold" target="_blank" href="http://3.136.236.78:8000">Visit
+                    Website</a>
+                {% endif %}
             </div>
 
             <section class="caption p-3 m-5">

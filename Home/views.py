@@ -16,6 +16,7 @@ def project_details(request, pk):
 
     # if the project has a link, associated with, it pass bool variable to template to create a button underneath image.
     if project.link != "":
+        print("The link for this project is: ", project.link)
         link = True
     else:
         link = False
