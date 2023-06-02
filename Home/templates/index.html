@@ -291,6 +291,7 @@
 
             <div class="col-sm p-5" id="contact_form">
                 <form method="post" id="contact_us">
+                    {% csrf_token %}
                     <div class="form-group col-sm p-2">
                         <input type="text" class="form-control form-control-lg" placeholder="Name">
                     </div>
