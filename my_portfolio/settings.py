@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-q*5c_8-z=!#kr&r4wjpskk3s$fbg1q_+%-9l$gccj8me@)!9gt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['3.131.24.181', "www.varsitywebandmedia.com", "varsitywebandmedia.com"]
+ALLOWED_HOSTS = ['3.131.24.181', "www.varsitywebandmedia.com", "varsitywebandmedia.com", "127.0.0.1"]
 
 
 
@@ -131,3 +131,7 @@ SECURE_HSTS_SECONDS = 30  # Unit is seconds; *USE A SMALL VALUE FOR TESTING!*
 SECURE_HSTS_PRELOAD = True
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
+MIDDLEWARE += ["csp.middleware.CSPMiddleware"]
+
+CSP_STYLE_SRC = ["'unsafe-inline'", "'self'", "cdn.jsdelivr.net",]
