@@ -5,6 +5,7 @@ from django.db import models
 class Project(models.Model):
     thumbnail = models.ImageField(upload_to='projects/')
     name = models.CharField(max_length=45)
+    link = models.CharField(max_length=75, blank=True)
     motivation = models.TextField(blank=False)
     capabilities = models.TextField(blank=True)
     my_contributions = models.TextField(blank=False)
