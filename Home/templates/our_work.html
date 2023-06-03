@@ -65,6 +65,13 @@
             padding: 20px;
             text-align: center;
         }
+
+        @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+            #project_container {
+                width: 20rem;
+            }
+
+        }
     </style>
 </head>
 {% endblock %}
@@ -101,7 +108,7 @@
 
                 {% for project in projects %}
                 <a href="{% url 'Home:project_details' project.id %}">
-                    <div class="container mt-2 p-3" style="height: 30vh; width: 30rem;">
+                    <div class="container mt-2 p-2" style="height: 30vh; width: 35rem;" id="project_container">
 
                         <img src="../../media/{{project.thumbnail}}" class="image" style="height: 100%; width: 100%;">
 
