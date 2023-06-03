@@ -12,8 +12,12 @@
     <link href="../static/css/main.css" rel="stylesheet" type="text/css">
 
     <style>
-        .container {
+        #project_container {
             position: relative;
+            height: 30vh;
+            width: 65vmin;
+            display: flex;
+            padding-top: 25px;
         }
 
         .image {
@@ -101,9 +105,9 @@
 
                 {% for project in projects %}
                 <a href="{% url 'Home:project_details' project.id %}">
-                    <div class="container mt-3" style="height: 30vh; width: 100%;" id="project_container">
+                    <div class="container mt-3" id="project_container">
 
-                        <img src="../../media/{{project.thumbnail}}" class="image" style="height: 100%; width: 100%;">
+                        <img src="../../media/{{project.thumbnail}}" class="image">
 
                         <div class="overlay">
                             <div class="text">
