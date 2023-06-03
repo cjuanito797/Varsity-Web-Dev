@@ -101,7 +101,7 @@
 
                 {% for project in projects %}
                 <a href="{% url 'Home:project_details' project.id %}">
-                    <div class="container p-3" style="height: 30vh; width: 65vmin;" id="project_container">
+                    <div class="container p-3" style="height: 30vh; width: 100%;" id="project_container">
 
                         <img src="../../media/{{project.thumbnail}}" class="image" style="height: 100%; width: 100%;">
 
