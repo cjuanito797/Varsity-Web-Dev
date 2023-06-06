@@ -25,7 +25,7 @@ MEDIA_URL = '/media/'
 SECRET_KEY = "django-insecure-q*5c_8-z=!#kr&r4wjpskk3s$fbg1q_+%-9l$gccj8me@)!9gt"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['3.131.24.181', "www.varsitywebandmedia.com", "varsitywebandmedia.com", "127.0.0.1"]
 
@@ -127,7 +127,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
-SECURE_HSTS_SECONDS = 30  # Unit is seconds; *USE A SMALL VALUE FOR TESTING!*
+SECURE_HSTS_SECONDS = 2_590_000  # Unit is seconds; *USE A SMALL VALUE FOR TESTING!*
 SECURE_HSTS_PRELOAD = True
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
@@ -141,4 +141,12 @@ CSP_SCRIPT_SRC = [
     "https://code.jquery.com"
 
 ]
-CSP_STYLE_SRC = ["https://cdn.jsdelivr.net/", "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js", "'unsafe-inline'", "'self'", "'data:'"]
+
+
+CSP_STYLE_SRC = [
+    "https://cdn.jsdelivr.net/",
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js",
+    "'unsafe-inline'",
+    "'self'",
+    "'data:'"
+]
