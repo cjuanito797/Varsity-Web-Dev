@@ -76,7 +76,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto p-2">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">About
+                        <a class="nav-link" aria-current="page" href="{% url 'Home:about_us' %}">About
                             Us</a>
                     </li>
                     <li class="nav-item">
@@ -114,9 +114,6 @@
     {% block mainbody %}
 
     <section id="intro">
-
-
-
         <!-- section that serves for an introduction. -->
         <!-- Content here -->
         <div id="intro-container" class="container-fluid">
@@ -326,90 +323,87 @@
 
     {% block footer %}
 
-    <div class="footer pt-5">
-        <footer class="text-lg-start bg-light text-muted">
+    <footer class="text-lg-start bg-light text-muted">
 
-            <!-- create a responsive flexbox container for creating a row.  -->
-            <section class="p-3 text-center border-top border-bottom" id="social_links"
-                style="background-color: #6C5B7B;">
-                <p class="fw-bold text-white lead">Call today to schedule your free consultation!</p>
-            </section>
+        <!-- create a responsive flexbox container for creating a row.  -->
+        <section class="p-3 text-center border-top border-bottom" id="social_links" style="background-color: #6C5B7B;">
+            <p class="fw-bold text-white lead">Call today to schedule your free consultation!</p>
+        </section>
 
-            <section class="d-flex justify-content-center p-4" style="background-color: #C06C84;">
+        <section class="d-flex justify-content-center p-4" style="background-color: #C06C84;">
 
-                <div class="row justify-content-center mt-5" style="text-align: left; color: white;">
+            <div class="row justify-content-center mt-5" style="text-align: left; color: white;">
 
-                    <div class="col-sm m-0 w-50" style="margin: 10%;">
+                <div class="col-sm m-0 w-50" style="margin: 10%;">
 
-                        <!-- add the resources links -->
-                        <h5 class="text-uppercase text-md-auto fw-bold mb-3 text-decoration-underline m-1">
-                            Resources</h5>
+                    <!-- add the resources links -->
+                    <h5 class="text-uppercase text-md-auto fw-bold mb-3 text-decoration-underline m-1">
+                        Resources</h5>
 
-                        <p class="fw-bold m-1">
-                            <a href="#" class="text-reset text-decoration-none">About Us</a>
+                    <p class="fw-bold m-1">
+                        <a href="{% url 'Home:about_us' %}" class="text-reset text-decoration-none">About Us</a>
 
-                        </p>
+                    </p>
 
-                        <p class="fw-bold m-1">
-                            <a href="#" class="text-reset text-decoration-none">Why Choose Us?</a>
+                    <p class="fw-bold m-1">
+                        <a href="#" class="text-reset text-decoration-none">Why Choose Us?</a>
 
-                        </p>
+                    </p>
 
-                        <p class="fw-bold m-1">
-                            <a href="#" class="text-reset text-decoration-none">Our Work</a>
+                    <p class="fw-bold m-1">
+                        <a href="#" class="text-reset text-decoration-none">Our Work</a>
 
-                        </p>
+                    </p>
 
-                        <p class="fw-bold m-1">
-                            <a href="#" class="text-reset text-decoration-none">About Us</a>
+                    <p class="fw-bold m-1">
+                        <a href="#" class="text-reset text-decoration-none">Testimonials</a>
 
-                        </p>
-
-                    </div>
-
-                    <div class="col-sm m-0  w-50" style="margin: 10%;">
-
-                        <!-- add the resources links -->
-                        <h5 class="text-uppercase text-md-auto fw-bold mb-3 text-decoration-underline m-1">
-                            Contact Us</h5>
-
-                        <p class="fw-bold m-1 text-white">
-                            (712)-796-7187
-
-                        </p>
-
-                        <p class="fw-bold m-1">
-                            cfanito797@icloud.com
-
-                        </p>
-
-                        <p class="fw-bold m-1">
-                            varsitywebdev.com
-
-                        </p>
-
-                        <p class="fw-bold m-1">
-
-
-                        </p>
-
-
-
-
-                    </div>
+                    </p>
 
                 </div>
 
-            </section>
+                <div class="col-sm m-0  w-50" style="margin: 10%;">
 
-            <!-- copyright section -->
-            <section class="d-flex justify-content-center p-3" style="background-color: #F67280;">
-                <div class="row m-2">
-                    <a class="text-white fw-bold text-decoration-none" href="#">@ Varsity Web & Media LLC</a>
+                    <!-- add the resources links -->
+                    <h5 class="text-uppercase text-md-auto fw-bold mb-3 text-decoration-underline m-1">
+                        Contact Us</h5>
+
+                    <p class="fw-bold m-1 text-white">
+                        (712)-796-7187
+
+                    </p>
+
+                    <p class="fw-bold m-1">
+                        cfanito797@icloud.com
+
+                    </p>
+
+                    <p class="fw-bold m-1">
+                        varsitywebdev.com
+
+                    </p>
+
+                    <p class="fw-bold m-1">
+
+
+                    </p>
+
+
+
+
                 </div>
-            </section>
-        </footer>
-    </div>
+
+            </div>
+
+        </section>
+
+        <!-- copyright section -->
+        <section class="d-flex justify-content-center p-3" style="background-color: #F67280;">
+            <div class="row m-2">
+                <a class="text-white fw-bold text-decoration-none" href="#">@ Varsity Web & Media LLC</a>
+            </div>
+        </section>
+    </footer>
     {% endblock %}
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

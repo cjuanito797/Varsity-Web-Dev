@@ -2,6 +2,9 @@ from django.shortcuts import render
 from .models import *
 # Create your views here.
 
+def about_us(request):
+    return render(request, "about_us.html")
+
 def our_work(request):
     # get a collection of all, projects.
     projects = Project.objects.all()

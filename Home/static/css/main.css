@@ -37,6 +37,11 @@
         flex-direction: column;
     }
 
+    footer {
+        margin-top: auto;
+    }
+
+
 
     #intro {
         padding-top: 10%;
@@ -124,6 +129,13 @@
     /* Just adding a comment */
 
 
-    .footer {
-        margin-top: auto;
+    #about_us {
+        border-top: 3px solid white;
+        background-color: #C06C84;
+    }
+
+    #about_us h1 {
+        font-family: 'Abril';
+        font-weight: bold;
+        color: white;
     }

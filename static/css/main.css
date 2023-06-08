@@ -37,6 +37,11 @@
         flex-direction: column;
     }
 
+    footer {
+        margin-top: auto;
+    }
+
+
 
     #intro {
         padding-top: 10%;
@@ -122,8 +127,3 @@
     }
 
     /* Just adding a comment */
-
-
-    .footer {
-        margin-top: auto;
-    }
