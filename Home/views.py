@@ -5,6 +5,12 @@ from .models import *
 def about_us(request):
     return render(request, "about_us.html")
 
+def our_process(request):
+    return render(request,"our_process.html")
+
+def testimonials(request):
+    return render(request, "testimonials.html")
+
 def our_work(request):
     # get a collection of all, projects.
     projects = Project.objects.all()

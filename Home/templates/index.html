@@ -84,11 +84,11 @@
                             Work</a>
                     </li>
                     <li class=" nav-item">
-                        <a class="nav-link" href="#">Our
+                        <a class="nav-link" href="{% url 'Home:our_process' %}">Our
                             Process</a>
                     </li>
                     <li class=" nav-item">
-                        <a class="nav-link" href="#">Testimonials</a>
+                        <a class="nav-link" href="{% url 'Home:testimonials' %}">Testimonials</a>
                     </li>
 
 
@@ -123,8 +123,9 @@
                 Website Today With
                 Varsity Web & Media!</h1>
 
-            <button type="button" class="btn btn-light" id="main_button">Start
-                Today</button>
+            <a role="button" class="btn btn-light p-3" id="main_button" href="{% url 'Home:home' %}#contact_us"
+                target="_top">Start
+                Today</a>
 
         </div>
 
@@ -346,17 +347,17 @@
                     </p>
 
                     <p class="fw-bold m-1">
-                        <a href="#" class="text-reset text-decoration-none">Why Choose Us?</a>
+                        <a href="{% url 'Home:our_process' %}" class="text-reset text-decoration-none">Our Process</a>
 
                     </p>
 
                     <p class="fw-bold m-1">
-                        <a href="#" class="text-reset text-decoration-none">Our Work</a>
+                        <a href="{% url 'Home:our_work' %}" class="text-reset text-decoration-none">Our Work</a>
 
                     </p>
 
                     <p class="fw-bold m-1">
-                        <a href="#" class="text-reset text-decoration-none">Testimonials</a>
+                        <a href="{% url 'Home:testimonials' %}" class="text-reset text-decoration-none">Testimonials</a>
 
                     </p>
 
